@@ -1,0 +1,16 @@
+.user-block {
+  margin: 0 auto;
+  padding: 15px;
+  width: 300px;
+
+  .user-block-text {
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+
+    strong {
+      font-weight: bold;
+    }
+  }
+}

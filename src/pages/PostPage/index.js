@@ -1,11 +1,13 @@
 import React from "react";
 import ShowPost from "../../components/showPost";
 import "../../components/showPost/style.scss";
+import "./style.scss";
 export default () => {
   const posts = [];
   for (let i = 0; i < 10; i++) {
     posts.push(
       <ShowPost
+        key={i}
         author={{
           name: "Anakin skywalker",
           avatar:

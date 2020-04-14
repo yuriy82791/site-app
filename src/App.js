@@ -2,6 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 import "./reset.scss";
+import "./style.scss";
 import Header from "./components/Header";
 import User from "./pages/User";
 import { HomePage } from "./pages/HomePage";
@@ -19,9 +20,8 @@ export default function App() {
           <Route exact component={PostPage} path="/posts" />
           <Route exact component={User} path="/contacts/:username" />
           <Route exact component={ContactsPage} path="/contacts" />
-
           <Route exact component={GalleryPage} path="/gallery" />
-          <Route component={() => <h1>404</h1>} />
+          <Route component={() => <h1 className="text-404">404</h1>} />
         </Switch>
       </div>
     </Router>
