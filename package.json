@@ -1,6 +1,6 @@
 {
   "homepage": "http://yuriy82791.github.io/site-app",
-  "name": "site-app",
+  "name": "site",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

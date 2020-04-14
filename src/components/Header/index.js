@@ -6,13 +6,13 @@ export default class Header extends Component {
     return (
       <header className="header">
         <nav className="menu">
-          <Link to="/">Home</Link>
+          <Link to="/site-app/">Home</Link>
 
-          <Link to="/posts">Posts</Link>
+          <Link to="/site-app/posts">Posts</Link>
 
-          <Link to="/gallery">Gallery</Link>
+          <Link to="/site-app/gallery">Gallery</Link>
 
-          <Link to="/contacts">Contacts</Link>
+          <Link to="/site-app/contacts">Contacts</Link>
         </nav>
       </header>
     );
