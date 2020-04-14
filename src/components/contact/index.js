@@ -25,7 +25,7 @@ export default class Contact extends Component {
           <div className="contact-information">
             <Link
               className="contact-name"
-              to={`/contacts/${this.props.contact.userName}`}
+              to={`/site-app/contacts/${this.props.contact.userName}`}
             >
               {this.props.contact.firstName + " " + this.props.contact.lastName}
             </Link>
