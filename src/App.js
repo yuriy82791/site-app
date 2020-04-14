@@ -18,10 +18,11 @@ export default function App() {
         <div className="">
           <Switch>
             <Route exact component={HomePage} path="/site-app" />
-            <Route exact component={PostPage} path="/site-app/posts" />
+
             <Route exact component={User} path="/site-app/contacts/:username" />
             <Route exact component={ContactsPage} path="/site-app/contacts" />
             <Route exact component={GalleryPage} path="/site-app/gallery" />
+            <Route exact component={PostPage} path="/site-app/posts" />
             <Route component={() => <h1 className="text-404">404</h1>} />
           </Switch>
         </div>
