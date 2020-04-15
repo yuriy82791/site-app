@@ -17,24 +17,22 @@ export default class Contact extends Component {
   };
   render() {
     return (
-      <Router>
-        <div className="contact">
-          <div className="icon">
-            <FontAwesomeIcon icon={this.getGender(this.props.contact.gender)} />
-          </div>
-          <div className="contact-information">
-            <Link
-              className="contact-name"
-              to={`/site-app/contacts/${this.props.contact.userName}`}
-            >
-              {this.props.contact.firstName + " " + this.props.contact.lastName}
-            </Link>
-            <div className="contact-data">
-              <span className="contact-phone">{this.props.contact.phone}</span>
-            </div>
+      <div className="contact">
+        <div className="icon">
+          <FontAwesomeIcon icon={this.getGender(this.props.contact.gender)} />
+        </div>
+        <div className="contact-information">
+          <Link
+            className="contact-name"
+            to={`/site-app/contacts/${this.props.contact.userName}`}
+          >
+            {this.props.contact.firstName + " " + this.props.contact.lastName}
+          </Link>
+          <div className="contact-data">
+            <span className="contact-phone">{this.props.contact.phone}</span>
           </div>
         </div>
-      </Router>
+      </div>
     );
   }
 }
